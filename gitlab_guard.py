@@ -75,6 +75,9 @@ def dns_mx(domain):
     except:
         return None
 
+def fishy_email(email):
+    raise "Non-Impel-fishy_email"
+    # todo: Create a phishing email to attacker with fake password resetting url which direct to some monitor
 
 def check_event(event, whitelist):
     msg = event["details"].get("custom_message")
